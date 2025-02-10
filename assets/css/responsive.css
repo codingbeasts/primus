@@ -20,7 +20,7 @@
     .navLinks {
         position: fixed;
         flex-flow: column;
-        background: rgba(255, 255, 255, .4);
+        background: rgba(51, 0, 0, .4);
         top: 12%;
         z-index: 9999;
         width: 100%;
@@ -33,6 +33,9 @@
     .navLinks.show{
         right: 0;
     }
+/* header .navLinks a{
+    color: var(--dark-blue) !important;
+} */
     .h__sec1{
         padding-top:10rem;
     }
