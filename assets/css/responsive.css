@@ -7,6 +7,12 @@
     }
 }
 @media screen and (max-width: 1025px) {
+    header{
+        position: fixed;
+        width: 100%;
+        background-color: var(--brick-red);
+        z-index: 9999;
+    }
     header nav{
         display: flex;
         justify-content: space-between;
@@ -15,7 +21,7 @@
         position: fixed;
         flex-flow: column;
         background: rgba(255, 255, 255, .4);
-        top: 14%;
+        top: 12%;
         z-index: 9999;
         width: 100%;
         right: -100%;
@@ -26,6 +32,9 @@
     }
     .navLinks.show{
         right: 0;
+    }
+    .h__sec1{
+        padding-top:10rem;
     }
 }
 /* small tablet */

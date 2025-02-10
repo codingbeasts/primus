@@ -25,6 +25,22 @@ header nav.d-xl-grid{
     transform: rotate(-5deg);
     z-index: -1;
 }
+header .navLinks li {
+    position: relative;
+}
+header .navLinks li:after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2.5px;
+    background-color: var(--dark-blue);
+    bottom: -10px;
+    left:0;
+    transition: .25s ease-in-out;
+}
+header .navLinks li:hover:after{
+    width: 100%;
+}
 /* benefits section */
 .h__sec3,.h__sec3 .hb__Line,.h__sec5{
     background-color: rgb(244, 241, 248);
