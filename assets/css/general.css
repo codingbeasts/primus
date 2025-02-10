@@ -1,0 +1,92 @@
+/* inner-wrapper */
+.inner-wrapper{
+    width: 80%;
+}
+/* header css */
+header .inner-wrapper{
+    width: 83.33333%;
+}
+header nav.d-grid{
+    grid-template-columns: 15% auto 15%;
+}
+/* main section */
+.h__sec1 {
+    background: linear-gradient(180deg, var(--burgundy) 0%, var(--plum) 100%);
+}
+.h__sec1 .mbGuide::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, var(--sky-blue) 0%, rgba(133, 202, 255, .2) 100%);
+    bottom: -10%;
+    left: 0%;
+    border-radius: 8px;
+    transform: rotate(-5deg);
+    z-index: -1;
+}
+/* benefits section */
+.h__sec3,.h__sec3 .hb__Line,.h__sec5{
+    background-color: rgb(244, 241, 248);
+}
+.h__sec5 img {
+    width: 20rem;
+}
+/* with section */
+.h__sec6 .httpIcon {
+    right: 5%;
+    top: -50%;
+    transform: translateY(50%);
+    width: 40px;
+    height: 40px;
+}
+.h__sec6 .httpIcon.text-danger{
+    background-color:rgb(255, 128, 128);
+} 
+.h__sec6 .httpIcon.text-success{
+    background-color: rgb(140, 226, 140);
+}
+.h__sec7{
+    background: linear-gradient(90deg, rgba(212, 73, 60, 1) 0%, rgba(220, 105, 94, 1) 100%);
+}
+.h__sec7 .iconReason{
+    width: 45px;
+    height: 45px;
+}
+.h__sec8,.h__sec11{
+    background:rgb(249, 250, 251);
+}
+.h__sec8 .horizontalLine{
+    border-bottom: 3px solid var(--lighter-gray);
+}
+.h__sec8 .verticalLine {
+    border-left: 1px dashed var(--lighter-gray);
+    border-width: 3px;
+    height: 50px;
+    display: inline-block;
+}
+.h__sec9 .sayCircle::after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(90deg, var(--brick-red) 0, transparent 100%);
+    border-radius: 50%;
+    top: -50%;
+    left: 0;
+    z-index: -1;
+    opacity: .4;
+}
+.h__sec11 .accordion-button:not(.collapsed) {
+    color: var(--brick-red);
+    background-color: rgb(251, 236, 235);
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+.h__sec11 .accordion-button:not(.collapsed)::after {
+    background-image: unset;
+    content: '-';
+}
+.h__sec11 .accordion-button::after {
+    background-image: unset;
+    content: '+';
+}

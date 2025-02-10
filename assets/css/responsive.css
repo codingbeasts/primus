@@ -1,0 +1,61 @@
+/* small tablet */
+@media screen and (min-width: 768px){
+
+}
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    html{
+        font-size: 7px;
+    }
+    .h__sec2 .grid-columns-6{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .h__sec3 .grid-columns-4,.h__sec7 .grid-columns-4{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+/* large tablet */
+@media screen and (min-width: 1024px){
+
+}
+@media screen and (min-width: 1024px) and (max-width: 1199px){
+    html{
+        font-size: 7px;
+    }
+    .h__sec2 .grid-columns-6{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .h__sec3 .grid-columns-4{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+/* small desktop */
+@media screen and (min-width: 1200px){
+
+}
+@media screen and (min-width: 1200px) and (max-width: 1439px){
+    html{
+        font-size: 7px;
+    }
+}
+/* medium destop */
+@media screen and (min-width: 1440px){
+
+}
+@media screen and (min-width: 1440px) and (max-width: 1599px){
+    html{
+        font-size: 7.5px;
+    }
+}
+/* large desktop */
+@media screen and (min-width: 1600px){
+
+}
+@media screen and (min-width: 1600px) and (max-width: 1919px){
+    html{
+        font-size: 8px;
+    }
+}
+/* extra large desktop */
+@media screen and (min-width: 1920px){
+    h1{color:red};
+}

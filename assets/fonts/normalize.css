@@ -1,0 +1,411 @@
+/* pre css */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+}
+html body ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+html body {
+    a {
+        text-decoration: none;
+        color: initial;
+    }
+    a:hover {
+        color: black;
+    }
+    a[role="button"]:hover {
+        color: white;
+    }
+    h1,h2,h3,h4,h5,h6,figure,blockquote,dl,dd,p {
+        margin: 0;
+        padding: 0;
+    }
+    [class^="col-"] {
+        padding: 0;
+    }
+    .row {
+        --bs-gutter-x: 0;
+        --bs-gutter-y: 0;
+    }
+    img {
+        max-width: 100%;
+        display: block;
+    }
+    textarea {
+        resize: none;
+    }
+}
+
+/* ---------------------------------------------------------------------- */
+/* root variables */
+:root {
+    --bs-body-font-family: "outfit-regular";
+    /* blue only */
+    --blue-light: rgb(235, 244, 249);
+    --blue-light-hover: rgb(224, 239, 245);
+    --blue-light-active: rgb(191, 222, 235);
+    --blue-normal: rgb(50, 149, 191);
+    --blue-normal-hover: rgb(45, 134, 172);
+    --blue-normal-active: rgb(40, 119, 153);
+    --blue-dark: rgb(38, 112, 143);
+    --blue-dark-hover: rgb(30, 89, 115);
+    --blue-dark-active: rgb(22, 67, 86);
+    --blue-darker: rgb(18, 52, 67);
+    /* gree only */
+    --green-light: rgb(245, 250, 237);
+    --green-light-hover: rgb(240, 247, 228);
+    --green-light-active: rgb(223, 239, 198);
+    --green-normal: rgb(153, 203, 72);
+    --green-normal-hover: rgb(138, 183, 65);
+    --green-normal-active: rgb(122, 162, 58);
+    --green-dark: rgb(115, 152, 54);
+    --green-dark-hover: rgb(92, 122, 43);
+    --green-dark-active: rgb(69, 91, 32);
+    --green-darker: rgb(54, 71, 25);
+    /* grey */
+    --grey: rgb(92, 92, 92);
+    /* gold */
+    --gold: rgb(231, 178, 4);
+
+}
+/* Classes for text blue colors */
+.text-blue-light {color: var(--blue-light);}
+.text-blue-light-hover {color: var(--blue-light-hover);}
+.text-blue-light-active {color: var(--blue-light-active);}
+.text-blue-normal {color: var(--blue-normal);}
+.text-blue-normal-hover {color: var(--blue-normal-hover);}
+.text-blue-normal-active {color: var(--blue-normal-active);}
+.text-blue-dark {color: var(--blue-dark);}
+.text-blue-dark-hover {color: var(--blue-dark-hover);}
+.text-blue-dark-active {color: var(--blue-dark-active);}
+.text-blue-darker {color: var(--blue-darker);}
+
+/* Classes for text blue colors */
+.bg-blue-light {background-color: var(--blue-light);}
+.bg-blue-light-hover {background-color: var(--blue-light-hover);}
+.bg-blue-light-active {background-color: var(--blue-light-active);}
+.bg-blue-normal {background-color: var(--blue-normal);}
+.bg-blue-normal-hover {background-color: var(--blue-normal-hover);}
+.bg-blue-normal-active {background-color: var(--blue-normal-active);}
+.bg-blue-dark {background-color: var(--blue-dark);}
+.bg-blue-dark-hover {background-color: var(--blue-dark-hover);}
+.bg-blue-dark-active {background-color: var(--blue-dark-active);}
+.bg-blue-darker {background-color: var(--blue-darker);}
+
+/* Classes for text green colors */
+.text-green-light {color: var(--green-light);}
+.text-green-light-hover {color: var(--green-light-hover);}
+.text-green-light-active {color: var(--green-light-active);}
+.text-green-normal {color: var(--green-normal);}
+.text-green-normal-hover {color: var(--green-normal-hover);}
+.text-green-normal-active {color: var(--green-normal-active);}
+.text-green-dark-hover {color: var(--green-dark-hover);}
+.text-green-dark-active {color: var(--green-dark-active);}
+.text-green-dark {color: var(--green-dark);}
+.text-green-darker {color: var(--green-darker);}
+
+/* Classes for background green colors */
+.bg-green-light {background-color: var(--green-light);}
+.bg-green-light-hover {background-color: var(--green-light-hover);}
+.bg-green-light-active {background-color: var(--green-light-active);}
+.bg-green-normal {background-color: var(--green-normal);}
+.bg-green-normal-hover {background-color: var(--green-normal-hover);}
+.bg-green-normal-active {background-color: var(--green-normal-active);}
+.bg-green-dark {background-color: var(--green-dark);}
+.bg-green-dark-hover {background-color: var(--green-dark-hover);}
+.bg-green-dark-active {background-color: var(--green-dark-active);}
+.bg-green-darker {background-color: var(--green-darker);}
+
+/* Classes for grey */
+.bg-grey {background-color: var(--grey);}
+.text-grey {color: var(--grey);}
+
+/* Classes for gold */
+.bg-gold {background-color: var(--gold);}
+.text-gold {color: var(--gold);}
+
+.bg_white{
+    background: white;
+}
+
+/* ---------------------------------------------------------------------- */
+/* font family */
+@font-face {
+    font-family: "outfit-black";
+    src: url("/public/assets/fonts/Outfit-Black.ttf");
+}
+@font-face {
+    font-family: "outfit-bold";
+    src: url("/public/assets/fonts/Outfit-Bold.ttf");
+}
+@font-face {
+    font-family: "outfit-extrabold";
+    src: url("/public/assets/fonts/Outfit-ExtraBold.ttf");
+}
+@font-face {
+    font-family: "outfit-light";
+    src: url("/public/assets/fonts/Outfit-Light.ttf");
+}
+@font-face {
+    font-family: "outfit-medium";
+    src: url("/public/assets/fonts/Outfit-Medium.ttf");
+}
+@font-face {
+    font-family: "outfit-regular";
+    src: url("/public/assets/fonts/Outfit-Regular.ttf");
+}
+@font-face {
+    font-family: "outfit-semibold";
+    src: url("/public/assets/fonts/Outfit-SemiBold.ttf");
+}
+
+/* ---------------------------------------------------------------------- */
+/* classes for font-family */
+.outfit-black {
+    font-family: "outfit-black";
+}
+.outfit-bold {
+    font-family: "outfit-bold";
+}
+.outfit-extrabold {
+    font-family: "outfit-extrabold";
+}
+.outfit-light {
+    font-family: "outfit-light";
+}
+.outfit-medium {
+    font-family: "outfit-medium";
+}
+.outfit-regular {
+    font-family: "outfit-regular";
+}
+.outfit-semibold {
+    font-family: "outfit-semibold";
+}
+
+/* ---------------------------------------------------------------------- */
+/* font-size only for heading */
+.fs--75 {
+    font-size: 7.5rem;
+}
+.fs--65{
+    font-size: 6.5rem;
+}
+.head--xxl {
+    font-size: 5rem;
+}
+.head--xl {
+    font-size: 4rem;
+}
+.head--l {
+    font-size: 3.6rem;
+}
+.head--m {
+    font-size: 3.2rem;
+}
+.head--r {
+    font-size: 3rem;
+}
+.head--s {
+    font-size: 2.8rem;
+}
+.head--xs {
+    font-size: 2.6rem;
+}
+
+/* ---------------------------------------------------------------------- */
+/* font-size for heading, paragraph, button, anchor, span */
+.fs--xxl {
+    font-size: 2.4rem;
+}
+.fs--xl {
+    font-size: 2.2rem;
+}
+.fs--l {
+    font-size: 2rem;
+}
+.fs--m {
+    font-size: 1.8rem;
+}
+.fs--r {
+    font-size: 1.6rem;
+}
+.fs--s {
+    font-size: 1.4rem;
+}
+.fs--xs {
+    font-size: 1.2rem;
+}
+
+/* ---------------------------------------------------------------------- */
+/* common classes for html elements */
+.wrapper {
+    position: relative;
+    width: 100%;
+}
+.inner-wrapper {
+    position: relative;
+    margin: 0 auto;
+}
+.inner-tab {
+    position: relative;
+    margin: 0 auto;
+}
+.height-inherit {
+    height: inherit;
+}
+.width-inherit {
+    width: inherit;
+}
+.width-fitcontent {
+    width: fit-content;
+}
+.m-start-auto {
+    margin-left: auto;
+}
+.m-end-auto {
+    margin-right: auto;
+}
+.justify-items-center {
+    justify-items: center;
+}
+.justify-self-start {
+    justify-self: start;
+}
+.justify-self-center {
+    justify-self: center;
+}
+.justify-self-end {
+    justify-self: end;
+}
+.bg-relative-mask {
+    position: relative;
+    z-index: 1;
+}
+
+/* ---------------------------------------------------------------------- */
+/* common grid classes */
+.grid-flow-column {
+    grid-auto-flow: column;
+}
+.grid-flow-row {
+    grid-auto-flow: row;
+}
+.grid-columns-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+.grid-columns-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+.grid-columns-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+.grid-columns-5 {
+    grid-template-columns: repeat(5, 1fr);
+}
+/* gap classes */
+.gap5 {gap: 5rem;}
+.gap6 {gap: 6rem;}
+.gap10 {gap: 10rem;}
+/* ---------------------------------------------------------------------- */
+/* common padding classes and margin-classes */
+.py-7 {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+.px-7 {
+    padding-left: 7rem;
+    padding-right: 7rem;
+}
+.py-6 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+.px-6 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+.p_tb-5 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+.p_lr-5 {
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+.m_t_5 {
+    margin-top: 5rem;
+}
+.m_b_5 {
+    margin-bottom: 5rem;
+}
+/* ---------------------------------------------------------------------- */
+/* button classes */
+.btn-common{
+    border-radius: 12px;
+}
+.btn-common,.btn-common-outline:hover{
+    transition: .25s ease-in-out;
+}
+/* not outline button */
+.btn-green-dark{
+    background: var(--green-dark);
+    border: 1px solid transparent;
+    color: white;
+}
+.btn-green-dark:hover{
+    background: white; 
+    border: 1px solid var(--green-dark);
+    color: var(--green-dark);
+}
+.btn-green-normal-active{
+    background: var(--green-normal-active);
+    border: 1px solid transparent;
+    color: white;
+}
+.btn-green-normal-active:hover{
+    background: white;
+    border: 1px solid var(--green-normal-active);
+    color: var(--green-normal-active)
+}
+/* outline button */
+.btn-green-normal-active-outline{
+    border: 1px solid var(--green-normal-active);
+}
+.btn-green-normal-active-outline:hover{
+    background: var(--green-normal-active);
+}
+.btn-green-dark-outline{
+    border: 1px solid var(--green-dark);
+}
+.btn-green-dark-outline:hover{
+    background: var(--green-dark);
+}
+.btn-green-darker-outline{
+    border: 1px solid var(--green-darker);
+}
+.btn-green-darker-outline:hover{
+    background: var(--green-darker);
+}
+.btn-blue-darker-outline{
+    border: 1px solid var(--blue-darker);
+}
+.btn-blue-darker-outline:hover{
+    background: var(--blue-darker);
+}
+.btn-blue-normal-hover-outline{
+    border: 1px solid var(--blue-normal-hover);
+}
+.btn-blue-normal-hover-outline:hover{
+    background: var(--blue-normal-hover);
+}
