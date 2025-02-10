@@ -17,7 +17,7 @@
     <div class="wrapper">
         <header class="bg-brick-red py-5">
             <div class="inner-wrapper">
-                <nav class="d-grid gap-5 align-items-center">
+                <nav class="d-xl-grid gap-5 align-items-center position-relative">
                         <a class="logo d-flex align-items-center gap-3" ="javascript:void(0);">
                             <svg height="70" width="60" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M463.1,112.37C373.68,96.33,336.71,84.45,256,48,175.29,84.45,138.32,96.33,48.9,112.37,32.7,369.13,240.58,457.79,256,464,271.42,457.79,479.3,369.13,463.1,112.37Z" style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
@@ -25,16 +25,24 @@
                             </svg>
                             <span class="head--r pop-black text-white lh-1" style="letter-spacing: 3px;">Primus <br>Vidya</span>
                         </a>
-                    <div class="d-flex align-items-center justify-content-between">
+                    <div class="d-flex align-items-center justify-content-between navLinks">
                         <a class="pop-semibold text-white fs--l" href="javascript:void(0);">Home</a>
                         <a class="pop-semibold text-white fs--l" href="javascript:void(0);">Top University</a>
                         <a class="pop-semibold text-white fs--l" href="javascript:void(0);">Regular Program</a>
                         <a class="pop-semibold text-white fs--l" href="javascript:void(0);">Distance / Online Program</a>
                         <a class="pop-semibold text-white fs--l" href="javascript:void(0);">WILP Program</a>
                         <a class="pop-semibold text-white fs--l" href="javascript:void(0);">More</a>
+                        <div class="navBttn d-block d-xl-none">
+                            <a class="pop-medium text-white fs--m bg-dark-slate-gray px-5 py-4 rounded-3" href="javascript:void(0);">Talk to our Expert</a>
+                        </div>
                     </div>
-                    <div class="navBttn">
+                    <div class="navBttn d-none d-xl-block">
                         <a class="pop-medium text-white fs--m bg-dark-slate-gray px-5 py-4 rounded-3" href="javascript:void(0);">Talk to our Expert</a>
+                    </div>
+                    <div class="showNavBtn d-block d-xl-none">
+                        <a class="fs--xxl text-white" href="javascript:void(0);">
+                            <i class="bi bi-list"></i>
+                        </a>
                     </div>
                 </nav>
             </div>
@@ -57,132 +65,133 @@
                         <h3 class="pop-medium head--xxl text-brick-red">Course for growing carrer?</h3>
                         <p class="pop-medium head--xs text-light-gray">Your search ends here.</p>
                     </article>
-                    <ul class="d-grid grid-columns-6 gap-5 justify-content-center">
-                        <li class="bg-maroon rounded-4">
+                    <div class="swiper sec2Swiper w-100">
+                    <ul class="swiper-wrapper d-md-grid grid-columns-6 gap-5 justify-content-center">
+                        <li class="bg-maroon rounded-4 swiper-slide">
                             <div class="h-100 py-5 d-flex flex-column align-items-center gap-4 text-center">
                                 <h4 class="pop-medium fs--xl text-white">Bachelor Of Education</h4>
                                 <h4 class="pop-semibold fs--xl text-white">&#40;B.Ed&#41;</h4>
                                 <p class="pop-semibold fs--l text-lighter-gray">2 Year</p>
                             </div>
                         </li>
-                        <li class="bg-maroon rounded-4">
+                        <li class="bg-maroon rounded-4 swiper-slide">
                             <div class="h-100 py-5 d-flex flex-column align-items-center gap-4 text-center">
                                 <h4 class="pop-medium fs--xl text-white">Masters in Education</h4>
                                 <h4 class="pop-semibold fs--xl text-white">&#40;M.Ed&#41;</h4>
                                 <p class="pop-semibold fs--l text-lighter-gray">2 Year</p>
                             </div>
                         </li>
-                        <li class="bg-maroon rounded-4">
+                        <li class="bg-maroon rounded-4 swiper-slide">
                             <div class="h-100 py-5 d-flex flex-column align-items-center gap-4 text-center">
                                 <h4 class="pop-medium fs--xl text-white">Diploma in Education</h4>
                                 <h4 class="pop-semibold fs--xl text-white">&#40;JBT&#41;</h4>
                                 <p class="pop-semibold fs--l text-lighter-gray">2 Year</p>
                             </div>
                         </li>
-                        <li class="bg-maroon rounded-4">
+                        <li class="bg-maroon rounded-4 swiper-slide">
                             <div class="h-100 py-5 d-flex flex-column align-items-center gap-4 text-center">
                                 <h4 class="pop-medium fs--xl text-white">Bachelor of Business Administration</h4>
                                 <h4 class="pop-semibold fs--xl text-white">&#40;BBA&#41;</h4>
                                 <p class="pop-semibold fs--l text-lighter-gray">3 Year</p>
                             </div>
                         </li>
-                        <li class="bg-maroon rounded-4">
+                        <li class="bg-maroon rounded-4 swiper-slide">
                             <div class="h-100 py-5 d-flex flex-column align-items-center gap-4 text-center">
                                 <h4 class="pop-medium fs--xl text-white">Master of Business Administration</h4>
                                 <h4 class="pop-semibold fs--xl text-white">&#40;MBA&#41;</h4>
                                 <p class="pop-semibold fs--l text-lighter-gray">2 Year</p>
                             </div>
                         </li>
-                        <li class="bg-maroon rounded-4">
+                        <li class="bg-maroon rounded-4 swiper-slide">
                             <div class="h-100 py-5 d-flex flex-column align-items-center gap-4 text-center">
                                 <h4 class="pop-medium fs--xl text-white">Post Graduate Diploma in Management</h4>
                                 <h4 class="pop-semibold fs--xl text-white">&#40;PGDM&#41;</h4>
                                 <p class="pop-semibold fs--l text-lighter-gray">2 Year</p>
                             </div>
                         </li>
-                        <li class="bg-maroon rounded-4">
+                        <li class="bg-maroon rounded-4 swiper-slide">
                             <div class="h-100 py-5 d-flex flex-column align-items-center gap-4 text-center">
                                 <h4 class="pop-medium fs--xl text-white">Diploma in Engineering</h4>
                                 <p class="pop-semibold fs--l text-lighter-gray">3 Year</p>
                             </div>
                         </li>
-                        <li class="bg-maroon rounded-4">
+                        <li class="bg-maroon rounded-4 swiper-slide">
                             <div class="h-100 py-5 d-flex flex-column align-items-center gap-4 text-center">
                                 <h4 class="pop-medium fs--xl text-white">Bachelor Of Technology</h4>
                                 <h4 class="pop-semibold fs--xl text-white">&#40;B.Tech&#41;</h4>
                                 <p class="pop-semibold fs--l text-lighter-gray">4 Year</p>
                             </div>
                         </li>
-                        <li class="bg-maroon rounded-4">
+                        <li class="bg-maroon rounded-4 swiper-slide">
                             <div class="h-100 py-5 d-flex flex-column align-items-center gap-4 text-center">
                                 <h4 class="pop-medium fs--xl text-white">Online Master Of Business Administration</h4>
                                 <h4 class="pop-semibold fs--xl text-white">&#40;MBA&#41;</h4>
                                 <p class="pop-semibold fs--l text-lighter-gray">2 Year</p>
                             </div>
                         </li>
-                        <li class="bg-maroon rounded-4">
+                        <li class="bg-maroon rounded-4 swiper-slide">
                             <div class="h-100 py-5 d-flex flex-column align-items-center gap-4 text-center">
                                 <h4 class="pop-medium fs--xl text-white">Online Bachelor Of Computer Application</h4>
                                 <h4 class="pop-semibold fs--xl text-white">&#40;BCA&#41;</h4>
                                 <p class="pop-semibold fs--l text-lighter-gray">3 Year</p>
                             </div>
                         </li>
-                        <li class="bg-maroon rounded-4">
+                        <li class="bg-maroon rounded-4 swiper-slide">
                             <div class="h-100 py-5 d-flex flex-column align-items-center gap-4 text-center">
                                 <h4 class="pop-medium fs--xl text-white">Online Master Of Commerce</h4>
                                 <h4 class="pop-semibold fs--xl text-white">&#40;M.Com&#41;</h4>
                                 <p class="pop-semibold fs--l text-lighter-gray">2 Year</p>
                             </div>
                         </li>
-                        <li class="bg-maroon rounded-4">
+                        <li class="bg-maroon rounded-4 swiper-slide">
                             <div class="h-100 py-5 d-flex flex-column align-items-center gap-4 text-center">
                                 <h4 class="pop-medium fs--xl text-white">Online Master Of Computer Application</h4>
                                 <h4 class="pop-semibold fs--xl text-white">&#40;MCA&#41;</h4>
                                 <p class="pop-semibold fs--l text-lighter-gray">3 Year</p>
                             </div>
                         </li>
-                        <li class="bg-maroon rounded-4">
+                        <li class="bg-maroon rounded-4 swiper-slide">
                             <div class="h-100 py-5 d-flex flex-column align-items-center gap-4 text-center">
                                 <h4 class="pop-medium fs--xl text-white">Online Bachelor Of Commerce</h4>
                                 <h4 class="pop-semibold fs--xl text-white">&#40;B.Com&#41;</h4>
                                 <p class="pop-semibold fs--l text-lighter-gray">3 Year</p>
                             </div>
                         </li>
-                        <li class="bg-maroon rounded-4">
+                        <li class="bg-maroon rounded-4 swiper-slide">
                             <div class="h-100 py-5 d-flex flex-column align-items-center gap-4 text-center">
                                 <h4 class="pop-medium fs--xl text-white">Online Bachelor Of Business Administration</h4>
                                 <h4 class="pop-semibold fs--xl text-white">&#40;BBA&#41;</h4>
                                 <p class="pop-semibold fs--l text-lighter-gray">3 Year</p>
                             </div>
                         </li>
-                        <li class="bg-maroon rounded-4">
+                        <li class="bg-maroon rounded-4 swiper-slide">
                             <div class="h-100 py-5 d-flex flex-column align-items-center gap-4 text-center">
                                 <h4 class="pop-medium fs--xl text-white">Online Master Of Arts</h4>
                                 <h4 class="pop-semibold fs--xl text-white">&#40;MA&#41;</h4>
                                 <p class="pop-semibold fs--l text-lighter-gray">2 Year</p>
                             </div>
                         </li>
-                        <li class="bg-maroon rounded-4">
+                        <li class="bg-maroon rounded-4 swiper-slide">
                             <div class="h-100 py-5 d-flex flex-column align-items-center gap-4 text-center">
                                 <h4 class="pop-medium fs--xl text-white">Online MBA for Working Executives</h4>
                                 <p class="pop-semibold fs--l text-lighter-gray">2 Year</p>
                             </div>
                         </li>
-                        <li class="bg-maroon rounded-4">
+                        <li class="bg-maroon rounded-4 swiper-slide">
                             <div class="h-100 py-5 d-flex flex-column align-items-center gap-4 text-center">
                                 <h4 class="pop-medium fs--xl text-white">Bachelor of Technology</h4>
                                 <h4 class="pop-semibold fs--xl text-white">&#40;B.Tech&#41; - WILP</h4>
                                 <p class="pop-semibold fs--l text-lighter-gray">3 Year</p>
                             </div>
                         </li>
-                        <li class="bg-maroon rounded-4">
+                        <li class="bg-maroon rounded-4 swiper-slide">
                             <div class="h-100 py-5 d-flex flex-column align-items-center gap-4 text-center">
                                 <h4 class="pop-medium fs--xl text-white">Master Of Technology</h4>
                                 <h4 class="pop-semibold fs--xl text-white">&#40;M.Tech&#41; - WILP</h4>
                                 <p class="pop-semibold fs--l text-lighter-gray">2 Year</p>
                             </div>
                         </li>
-                    </ul>
+                    </ul></div>
                 </div>
             </div>
         </div>
@@ -194,29 +203,30 @@
                         <h3 class="pop-semibold head--xxl text-dark-blue">Why <span class="text-brick-red">PrimusVidya?</span></h3>
                         <p class="pop-medium fs--xl text-light-gray">Explore 150+ Colleges, 100+ courses & More with Smart AI Assitance.</p>
                     </article>
-                    <ul class="d-grid grid-columns-4 gap-5">
-                        <li>
+                    <div class="swiper sec3Swiper w-100">
+                    <ul class="swiper-wrapper d-md-grid grid-columns-4 gap-5">
+                        <li class="swiper-slide">
                             <div class="h-100 bg-white rounded-4 shadow p-5 text-center">
                                 <img src="./assets/images/pixeltrue-idea-1.svg" alt="courses">
                                 <h3 class="pop-semibold head--m text-dark-blue">Explore Colleges, Courses & More</h3>
                                 <p class="pop-medium mt-4 fs--xl text-light-gray">Our experienced counsellors provide end-to-end counselling to education seekers and help them secure their career.</p>
                             </div>
                         </li>
-                        <li>
+                        <li class="swiper-slide">
                             <div class="h-100 bg-white rounded-4 shadow p-5 text-center">
                                 <img src="./assets/images/gummy-programming.svg" alt="selection">
                                 <h3 class="pop-semibold head--m text-dark-blue">University Selection</h3>
                                 <p class="pop-medium mt-4 fs--xl text-light-gray">Thanks to our tie-ups with the top NMC/ MCI recognised medical colleges abroad, students get a wider choice while selecting a university  that fully  suits their interests and requirments.</p>
                             </div>
                         </li>
-                        <li>
+                        <li class="swiper-slide">
                             <div class="h-100 bg-white rounded-4 shadow p-5 text-center">
                                 <img src="./assets/images/pixeltrue-plan-1.svg" alt="counselling">
                                 <h3 class="pop-semibold head--m text-dark-blue">Free Counselling</h3>
                                 <p class="pop-medium mt-4 fs--xl text-light-gray">Our experienced counsellors provide end-to-end counselling to education seekers and help them secure their career.</p>
                             </div>
                         </li>
-                        <li>
+                        <li class="swiper-slide">
                             <div class="h-100 bg-white rounded-4 shadow p-5 text-center">
                                 <img src="./assets/images/pixeltrue-contact.svg" alt="support">
                                 <h3 class="pop-semibold head--m text-dark-blue">Complete Assitance</h3>
@@ -224,6 +234,7 @@
                             </div>
                         </li>
                     </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -237,7 +248,7 @@
                     </article>
                     <div class="d-flex gap-5">
                         <div class="d-flex flex-column gap-5 align-items-center"><img class="rounded-4" src="./assets/images/BOSSE-Board-Of-open-Schooling-And-Skill-Education.jpg" alt="BOSSE"><a class="pop-medium fs--xl text-white bg-dark-slate-gray py-4 px-4 rounded-3" href="javscript:void(0);">Know More</a></div>
-                        <div class="bg-white shadow p-5 col-8 rounded-4">
+                        <div class="bg-white d-none d-md-block shadow p-5 col-8 rounded-4">
                             <h3 class="pop-medium head--m text-dark-blue">Admission Open 24/7</h3>
                             <p class="mt-4 pop-medium fs--xl text-light-gray">The Board of Open Schooling and Skill Education (BOSSE), Sikkim, is an open schooling board that aims to cater to the varied academic needs of the divergent group of students up to pre-degree level including Secondary/Senior Secondary, skill and vocational education. BOSSE is open schooling education board in Sikkim, was established under Act No. 14 of 2020 of the Sikkim Legislative Assembly, passed on 21-09-2020, according to the Sikkim Act 2020 to promulgate and disseminate the open schooling education at state & national level. </p>
                         </div>
@@ -276,7 +287,7 @@
                         <h3 class="pop-semibold head--xxl text-dark-blue">How Students feel <span class="text-brick-red">With & Without PrimusVidya</span></h3>
                         <p class="pop-medium fs--xl text-light-gray">Be wise and take PrimusVidya advice</p>
                     </article>
-                    <div class="d-grid grid-columns-2 gap-5 mt-5">
+                    <div class="d-flex flex-column d-md-grid grid-columns-2 gap-5 mt-5">
                         <div class="border-danger border border-2 rounded-4 shadow px-5 py-6">
                             <p class="pop-medium head--m border-danger border border-2 rounded-3 shadow ps-4 py-3 position-relative"><i class="text-danger bi bi-exclamation-circle"></i><span class="ms-3 text-danger">https://</span><span>otherwebsite.com</span>
                             <span class="position-absolute httpIcon text-danger rounded-circle d-flex justify-content-center align-items-center">
@@ -312,8 +323,8 @@
                         <h3 class="pop-bold head--l text-white">Reason for Choosing Us.</h3>
                         <p class="pop-medium fs--xl text-white mt-5">Answer simple questions and choose the best online university for you anywhere, anytime.</p>
                     </div>
-                    <ul class="d-grid grid-columns-4 gap5">
-                        <li>
+                    <ul class="d-flex flex-column d-md-grid grid-columns-4 gap5">
+                        <li class="d-none d-md-block">
                             <div class="h-100 bg-white rounded-4 bg-opacity-75"><img src="./assets/images/13338135_5214641.svg" alt="form"></div>
                         </li>
                         <li>
@@ -394,7 +405,7 @@
                         <p class="pop-medium fs--xl text-light-gray">Students Review</p>
                     </article>
                     <div class="d-flex align-items-center gap-5">
-                        <div class="text-center pop-medium text-dark-blue col-3 sayCircle position-relative">
+                        <div class="d-none d-md-block text-center pop-medium text-dark-blue col-3 sayCircle position-relative">
                             <h4 class="head--xl">Student Say About</h4>
                             <h4 class="head--xl">Us</h4>
                         </div>
@@ -434,7 +445,7 @@
                         <p class="pop-semibold head--m">Call Us : <a class="text-white" href="tel:+91 9810508409">+91 9810508409 &#40;Or&#41; Chat Now</a></p>
                         <a class="pop-medium fs--xl text-white bg-dark-slate-gray py-4 px-4 rounded-3" href="javascript:void(0);">Get Free Help</a>
                     </div>
-                    <div class="col-5"><img src="./assets/images/pixeltrue-support-1.svg" alt="support"></div>
+                    <div class="d-none d-md-block col-5"><img src="./assets/images/pixeltrue-support-1.svg" alt="support"></div>
                 </div>
             </div>
         </div>
@@ -485,6 +496,113 @@
                 </div>
             </div>
         </div>
+        <footer class="bg-dark-slate-gray py-7">
+            <div class="">
+                <div class="inner-wrapper">
+                    <ul class="d-md-grid grid-columns-4 gap-4 row-gap-md-5 row-gap-xl-0 py-5">
+                        <li class="d-none d-md-block">
+                            <h4 class="pop-semibold head--m text-white mb-5">Regular Program</h4>
+                            <div class="d-flex flex-column gap-4 pop-medium fs--m">
+                                <a class="text-white" href="javscript:void(0);"><span class="f_linkIcon"><i class="bi bi-caret-right-fill"></i></span>Bachelor of Education</a>
+                                <a class="text-white" href="javscript:void(0);"><span class="f_linkIcon"><i class="bi bi-caret-right-fill"></i></span>Masters in Education (M.Ed)</a>
+                                <a class="text-white" href="javscript:void(0);"><span class="f_linkIcon"><i class="bi bi-caret-right-fill"></i></span>Diploma in Education JBT</a>
+                                <a class="text-white" href="javscript:void(0);"><span class="f_linkIcon"><i class="bi bi-caret-right-fill"></i></span>Bachelor of Business Administration</a>
+                                <a class="text-white" href="javscript:void(0);"><span class="f_linkIcon"><i class="bi bi-caret-right-fill"></i></span>Master of Business Administration</a>
+                                <a class="text-white" href="javscript:void(0);"><span class="f_linkIcon"><i class="bi bi-caret-right-fill"></i></span>Post Graduate Diploma in Management</a>
+                                <a class="text-white" href="javscript:void(0);"><span class="f_linkIcon"><i class="bi bi-caret-right-fill"></i></span>Diploma in Engineering</a>
+                                <a class="text-white" href="javscript:void(0);"><span class="f_linkIcon"><i class="bi bi-caret-right-fill"></i></span>Bachelor of Technology B.Tech</a>
+                                <a class="text-white" href="javscript:void(0);"><span class="f_linkIcon"><i class="bi bi-caret-right-fill"></i></span>Master of Technology M.Tech</a>
+                                <a class="text-white" href="javscript:void(0);"><span class="f_linkIcon"><i class="bi bi-caret-right-fill"></i></span>Diploma in Pharmacy</a>
+                                <a class="text-white" href="javscript:void(0);"><span class="f_linkIcon"><i class="bi bi-caret-right-fill"></i></span>Bachelor of Pharmacy</a>
+                                <a class="text-white" href="javscript:void(0);"><span class="f_linkIcon"><i class="bi bi-caret-right-fill"></i></span>Master of Pharmacy</a>
+                                <a class="text-white" href="javscript:void(0);"><span class="f_linkIcon"><i class="bi bi-caret-right-fill"></i></span>Diploma in Computer Application</a>
+                                <a class="text-white" href="javscript:void(0);"><span class="f_linkIcon"><i class="bi bi-caret-right-fill"></i></span>Bachelor of Science in Information Technology</a>
+                                <a class="text-white" href="javscript:void(0);"><span class="f_linkIcon"><i class="bi bi-caret-right-fill"></i></span>Bachelor's in Computer Application</a>
+                                <a class="text-white" href="javscript:void(0);"><span class="f_linkIcon"><i class="bi bi-caret-right-fill"></i></span>Master of Science in Information Technology</a>
+                                <a class="text-white" href="javscript:void(0);"><span class="f_linkIcon"><i class="bi bi-caret-right-fill"></i></span>Masters in Computer Applications</a>
+                                <a class="text-white" href="javscript:void(0);"><span class="f_linkIcon"><i class="bi bi-caret-right-fill"></i></span>Bachelor of Legislative Law (BA LLB)</a>
+                                <a class="text-white" href="javscript:void(0);"><span class="f_linkIcon"><i class="bi bi-caret-right-fill"></i></span>Bachelor of Law</a>
+                                <a class="text-white" href="javscript:void(0);"><span class="f_linkIcon"><i class="bi bi-caret-right-fill"></i></span>Master of Law</a>
+                            </div>
+                        </li>
+                        <li class="d-none d-md-block">
+                            <h4 class="pop-semibold head--m text-white mb-5">Distance/ Online Program</h4>
+                            <div class="d-flex flex-column gap-4 pop-medium fs--m">
+                                <a class="text-white" href="javscript:void(0);"><span class="f_linkIcon"><i class="bi bi-caret-right-fill"></i></span>Master of Business Administration</a>
+                                <a class="text-white" href="javscript:void(0);"><span class="f_linkIcon"><i class="bi bi-caret-right-fill"></i></span>Bachelors in Computer Application</a>
+                                <a class="text-white" href="javscript:void(0);"><span class="f_linkIcon"><i class="bi bi-caret-right-fill"></i></span>Master of Commerce</a>
+                                <a class="text-white" href="javscript:void(0);"><span class="f_linkIcon"><i class="bi bi-caret-right-fill"></i></span>Masters in Computer Application</a>
+                                <a class="text-white" href="javscript:void(0);"><span class="f_linkIcon"><i class="bi bi-caret-right-fill"></i></span>Bachelor of Commerce</a>
+                                <a class="text-white" href="javscript:void(0);"><span class="f_linkIcon"><i class="bi bi-caret-right-fill"></i></span>Bachelor of Business Administration</a>
+                                <a class="text-white" href="javscript:void(0);"><span class="f_linkIcon"><i class="bi bi-caret-right-fill"></i></span>Master of Arts</a>
+                                <a class="text-white" href="javscript:void(0);"><span class="f_linkIcon"><i class="bi bi-caret-right-fill"></i></span>MBA for Working Executives</a>
+                                <a class="text-white" href="javscript:void(0);"><span class="f_linkIcon"><i class="bi bi-caret-right-fill"></i></span>Master of Business Administration- Dual Specialization</a>
+                                <a class="text-white" href="javscript:void(0);"><span class="f_linkIcon"><i class="bi bi-caret-right-fill"></i></span>Bachelor of Commerce (Hons.)</a>
+                                <a class="text-white" href="javscript:void(0);"><span class="f_linkIcon"><i class="bi bi-caret-right-fill"></i></span>Master of Commerce (Financial Management)</a>
+                                <a class="text-white" href="javscript:void(0);"><span class="f_linkIcon"><i class="bi bi-caret-right-fill"></i></span>Bachelor of Arts</a>
+                                <a class="text-white" href="javscript:void(0);"><span class="f_linkIcon"><i class="bi bi-caret-right-fill"></i></span>Bachelor of Arts - JMC</a>
+                                <a class="text-white" href="javscript:void(0);"><span class="f_linkIcon"><i class="bi bi-caret-right-fill"></i></span>Bachelor of Library and Information Science</a>
+                                <a class="text-white" href="javscript:void(0);"><span class="f_linkIcon"><i class="bi bi-caret-right-fill"></i></span>Master of Arts -JMC</a>
+                                <a class="text-white" href="javscript:void(0);"><span class="f_linkIcon"><i class="bi bi-caret-right-fill"></i></span>Master of Arts Buddhist Studies</a>
+                                <a class="text-white" href="javscript:void(0);"><span class="f_linkIcon"><i class="bi bi-caret-right-fill"></i></span>Master of Arts Economics</a>
+                                <a class="text-white" href="javscript:void(0);"><span class="f_linkIcon"><i class="bi bi-caret-right-fill"></i></span>Master of Arts Education</a>
+                                <a class="text-white" href="javscript:void(0);"><span class="f_linkIcon"><i class="bi bi-caret-right-fill"></i></span>Master of Library and Information Science</a>
+                                <a class="text-white" href="javscript:void(0);"><span class="f_linkIcon"><i class="bi bi-caret-right-fill"></i></span>Master of Science</a>
+                            </div>
+                        </li>
+                        <li class="d-none d-xxl-block">
+                            <h4 class="pop-semibold head--m text-white mb-5">WILP Program</h4>
+                            <div class="d-flex flex-column gap-4 pop-medium fs--m">
+                                <a class="text-white" href="javscript:void(0);"><span class="f_linkIcon"><i class="bi bi-caret-right-fill"></i></span>Bachelor of Technology (B.Tech) | WILP</a>
+                                <a class="text-white" href="javscript:void(0);"><span class="f_linkIcon"><i class="bi bi-caret-right-fill"></i></span>Master of Technology (M.Tech) | WILP</a>
+                            </div>
+                        </li>
+                        <li>
+                            <h4 class="pop-semibold head--m text-white mb-5">Get in Touch With Us</h4>
+                            <div class="position-relative mb-5 col-10">
+                                <input class="w-100 pop-regular fs--m rounded-pill p_lr-5 ps-5 py-3" type="text" name="" id="" placeholder="Enter Your Mail...">
+                                <span class="submitMail position-absolute text-white fs--xl rounded-circle d-flex align-items-center justify-content-center bg-brick-red top-50 translate-middle-y"><i class="bi bi-arrow-right"></i></span>
+                            </div>
+                            <div class="mb-5">
+                                <h5 class="pop-semibold head--r text-white mb-3">Support</h5>
+                                <div class="d-flex flex-column gap-4 pop-medium fs--m">
+                                    <a class="text-white" href="javscript:void(0);"><span class="f_linkIcon"><i class="bi bi-caret-right-fill"></i></span>Our Blog</a>
+                                    <a class="text-white" href="javscript:void(0);"><span class="f_linkIcon"><i class="bi bi-caret-right-fill"></i></span>Contact Support</a>
+                                    <a class="text-white" href="javscript:void(0);"><span class="f_linkIcon"><i class="bi bi-caret-right-fill"></i></span>About Us</a>
+                                    <a class="text-white" href="javscript:void(0);"><span class="f_linkIcon"><i class="bi bi-caret-right-fill"></i></span>Why PrimusVidya</a>
+                                    <a class="text-white" href="javscript:void(0);"><span class="f_linkIcon"><i class="bi bi-caret-right-fill"></i></span>Pay Online</a>
+                                </div>
+                            </div>
+                            <div class="col-10">
+                                <h5 class="pop-semibold head--r text-white mb-5">Support</h5>
+                                <img src="./assets/images/qr.jpg" alt="qr-code">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="border-secondary border border-start-0 border-end-0">
+                    <ul class="inner-wrapper d-flex flex-column flex-md-row gap-4 gap-md-0 align-items-center justify-content-between py-5">
+                        <li class="pop-medium fs--m text-white d-flex align-items-center gap-4">Follow Us : 
+                            <div class="d-flex gap-4 align-items-center">
+                                <span class="socialIcons"><a class="text-sky-blue fs--l" href="javascript:void(0);"><i class="bi bi-facebook"></i></a></span>
+                                <span class="socialIcons"><a class="text-sky-blue fs--l" href="javascript:void(0);"><i class="bi bi-linkedin"></i></a></span>
+                                <span class="socialIcons"><a class="text-sky-blue fs--l" href="javascript:void(0);"><i class="bi bi-instagram"></i></a></span>
+                                <span class="socialIcons"><a class="text-sky-blue fs--l" href="javascript:void(0);"><i class="bi bi-youtube"></i></a></span>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center gap-4">
+                            <a class="text-white pop-medium fs--l" href="javascript:void(0);">Terms & Condition</a>
+                            <a class="text-white pop-medium fs--l" href="javascript:void(0);">Disclaimer</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="inner-wrapper d-none d-md-block">
+                    <p class="pop-regular text-white fs--m text-center py-5">The intend of Primusvidya is to provide unbiased precise information & comparative guidance on Universities and its Programs of Study to the Admission Aspirants. The contents of the 1 Primusvidya Site, such as Texts, Graphics, Images, Blogs, Videos, University Logos, and other materials contained on Primusvidya Site (collectively, "Content") are for information purpose only. The content is not intended to be a substitute for in any form on offerings of its Academia Partner. 2 Infringing on intellectual property or associated rights is not intended or deliberately acted upon. The information provided 3 by Primusvidya on www.Primusvidya.com or any of its mobile or any other applications is for general information purposes only. All information on the site and our mobile application is provided in good faith with accuracy and to the best of our knowledge, however, we make nor representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, completeness of any information on the Site or our mobile application. Primusvidya & 4 its fraternity will not be liable for any errors or omissions and damages or losses resultant if any from the usage of its information.</p>
+                </div>
+                <div class="text-center pt-5 border-secondary border border-start-0 border-end-0 border-bottom-0">
+                    <a class="text-white fs--l pop-semibold" href="javascript:void(0);">Copyright &copy; 2025 PrimusVidya. All Right Reserved</a></div>
+            </div>
+        </footer>
     </div>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/swiper-bundle.min.js"></script>

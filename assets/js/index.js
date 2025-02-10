@@ -14,3 +14,17 @@ function toggleIntersection( observerEl, className, targetElement, ifFunc, elseF
 }
 // toggleIntersection( document.querySelector("[scrollWatcher]"), "", document.querySelector(".navHead"), (targetElement) => targetElement.classList.remove("navBlur"), (targetElement) => targetElement.classList.add("navBlur"), );
 // console.log(document.querySelector('[scrollWatcher]'));
+
+if (window.innerWidth < 600) {
+  const swiper1 = new Swiper(".sec2Swiper", {
+    spaceBetween: 0,
+    slidesPerView: 1,
+  });
+  const swiper2 = new Swiper(".sec3Swiper", {});
+}
+
+
+document.querySelector('.showNavBtn').addEventListener('click',function(){
+  document.querySelector('.navLinks').classList.toggle('show');
+});
+

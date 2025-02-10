@@ -6,7 +6,7 @@
 header .inner-wrapper{
     width: 83.33333%;
 }
-header nav.d-grid{
+header nav.d-xl-grid{
     grid-template-columns: 15% auto 15%;
 }
 /* main section */
@@ -89,4 +89,20 @@ header nav.d-grid{
 .h__sec11 .accordion-button::after {
     background-image: unset;
     content: '+';
+}
+footer .submitMail{
+    right: 2%;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+footer .f_linkIcon {
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: var(--dark-teal);
+    margin-right: 5px;
 }
