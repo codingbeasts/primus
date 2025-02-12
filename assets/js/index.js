@@ -9,15 +9,17 @@ function toggleIntersection( observerEl, className, targetElement, ifFunc, elseF
         elseFunc(targetElement, className);
       }
     });
-  }, { threshold: 1.0 });
+  });
   observer.observe(observerEl);
 }
 
-// const animatedAll = document.querySelectorAll('.animated');
+function startAnim(){
+const animatedAll = document.querySelectorAll('.animated');
 // console.log(animatedAll);
-// animatedAll.forEach((el)=>{
-//   toggleIntersection( el, "", el, (targetElement) => targetElement.classList.add("fadeInUp"), (targetElement) => targetElement.classList.remove("fadeInUp"));
-// });
+animatedAll.forEach((el)=>{
+  toggleIntersection( el, "", el, (targetElement) => targetElement.classList.add("fadeInUp"), (targetElement) => targetElement.classList.remove("fadeInUp"));
+});
+}
 // toggleIntersection( document.querySelector("[scrollWatcher]"), "", document.querySelector(".navHead"), (targetElement) => targetElement.classList.remove("navBlur"), (targetElement) => targetElement.classList.add("navBlur"), );
 // console.log(document.querySelector('[scrollWatcher]'));
 
@@ -62,6 +64,12 @@ initSwiper();
 
 // Reinitialize on window resize
 window.addEventListener("resize", initSwiper);
+window.addEventListener('load',startAnim);
+window.addEventListener('resize',()=>{
+if(window.innerWidth >= 1200){
+  startAnim();
+}
+});
 
 
 
